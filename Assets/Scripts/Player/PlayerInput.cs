@@ -17,7 +17,7 @@ public class PlayerInput : MonoBehaviour
 
     static private InputActionAsset inputActions;
 
-    private PlayerControls controls;
+    public PlayerControls controls;
 
     private PlayerMovement playerMovement;
 
@@ -77,6 +77,16 @@ public class PlayerInput : MonoBehaviour
     {
         if(!isRecievingInput)
         {
+            if(GetComponentInChildren<EmpoweringOneTutorial>())
+        if(context.action.phase == InputActionPhase.Started && (GetComponentInChildren<EmpoweringOneTutorial>().inone || GetComponentInChildren<EmpoweringOneTutorial>().intwo))
+            {
+                GetComponentInChildren<EmpoweringOneTutorial>().EndPrompt();
+                
+                moveInput = 0;
+
+                AttackPerformed(context);
+            }
+
             return;
         }
 
@@ -128,6 +138,14 @@ public class PlayerInput : MonoBehaviour
     {
         if(!isRecievingInput)
         {
+            if(GetComponentInChildren<DevotedTutorial>())
+        if(context.action.phase == InputActionPhase.Started && GetComponentInChildren<DevotedTutorial>().intwo)
+            {
+                GetComponentInChildren<DevotedTutorial>().EndPrompt();
+            }
+
+            JumpPerformed(context);
+
             return;
         }
 
@@ -164,10 +182,25 @@ public class PlayerInput : MonoBehaviour
         || PlayerState.GetState() == PlayerState.State.Sliding || PlayerState.GetState() == PlayerState.State.Staggered
         || !isRecievingInput)
         {
+        
+        if(GetComponentInChildren<DevotedTutorial>())
+        if(context.ReadValue<Vector2>().x != 0 && GetComponentInChildren<DevotedTutorial>().inone)
+            {
+                GetComponentInChildren<DevotedTutorial>().EndPrompt();
+            }
+
+            if(GetComponentInChildren<EmpoweringOneTutorial>())
+        if(context.ReadValue<Vector2>().x != 0 && (GetComponentInChildren<EmpoweringOneTutorial>().inthree || GetComponentInChildren<EmpoweringOneTutorial>().infour))
+            {
+                GetComponentInChildren<EmpoweringOneTutorial>().EndPrompt();
+            }
+
             return;
         }
 
         Vector2 vectorValue = context.ReadValue<Vector2>();
+
+        
 
         moveInput = vectorValue.x;
 
@@ -242,6 +275,11 @@ public class PlayerInput : MonoBehaviour
     {
         if(!isRecievingInput)
         {
+            if(GetComponentInChildren<DevotedTutorial>())
+        if(context.action.phase == InputActionPhase.Started && (GetComponentInChildren<DevotedTutorial>().inthree || GetComponentInChildren<DevotedTutorial>().infour))
+            {
+                GetComponentInChildren<DevotedTutorial>().EndPrompt();
+            }
             return;
         }
 
@@ -266,6 +304,15 @@ public class PlayerInput : MonoBehaviour
     {
         if(!isRecievingInput)
         {
+            if(GetComponentInChildren<GuideTutorial>())
+        if(context.action.phase == InputActionPhase.Started && GetComponentInChildren<GuideTutorial>().inone)
+            {
+                GetComponentInChildren<GuideTutorial>().EndPrompt();
+                
+                moveInput = 0;
+
+                InteractPerformed(context);
+            }
             return;
         }
 

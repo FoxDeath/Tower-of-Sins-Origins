@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.InputSystem;
 
-public class DevotedTutorial : MonoBehaviour
+public class EmpoweringOneTutorial : MonoBehaviour
 {
     [SerializeField] TMP_Text tutorialText;
     [SerializeField] GameObject tutorialCanvas;
@@ -47,25 +47,25 @@ public class DevotedTutorial : MonoBehaviour
         switch(i)
         {
             case 1:
-                tutorialText.text = "Move using A and D";
+                tutorialText.text = "Press Click or J to destroy the bust and create a dagger";
 
                 inone = true;
             break;
 
             case 2:
-                tutorialText.text = "Hold SPACE to jump over the rubble";
+                tutorialText.text = "Press Click or J to destroy blocked doorway by using a dagger";
 
                 intwo = true;
             break;
 
             case 3:
-                tutorialText.text = "Press SHIFT destroy the rubble and save the citizens";
+                tutorialText.text = "Move near a citizen to give a dagger so they can defend themselves";
 
                 inthree = true;
             break;
             
             case 4:
-                tutorialText.text = "Press SHIFT to charge into the Shadows and kill them";
+                tutorialText.text = "Climb up the wall to move forward";
 
                 infour = true;
             break;
