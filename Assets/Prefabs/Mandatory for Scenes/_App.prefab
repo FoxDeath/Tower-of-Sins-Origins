@@ -1,0 +1,214 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3494177237195998290
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3494177237195998291}
+  - component: {fileID: 3785812231961600981}
+  m_Layer: 0
+  m_Name: _App
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3494177237195998291
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3494177237195998290}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3785812231961600981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3494177237195998290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b65a26f129f8fbb4ba0f714bed422312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: None
+    source: {fileID: 0}
+    clip: {fileID: 0}
+    volume: 0.1
+    pitch: 1
+    isLooping: 0
+    isPlaying: 0
+    playOnAwake: 0
+  - name: Run
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 97cb0a55faa00c54186d294196fa6d65, type: 3}
+    volume: 0.5
+    pitch: 1
+    isLooping: 1
+    isPlaying: 0
+    playOnAwake: 0
+  - name: Slide
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: d71b717aa30aa9248acdc98f0cc0db2f, type: 3}
+    volume: 0.1
+    pitch: 1
+    isLooping: 0
+    isPlaying: 0
+    playOnAwake: 0
+  - name: Jump
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 16952a4ad5d080040931c4a7dcb40d97, type: 3}
+    volume: 0.1
+    pitch: 1
+    isLooping: 0
+    isPlaying: 0
+    playOnAwake: 0
+  - name: Land
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 8ae63888edabcce43a3e7e1209aef621, type: 3}
+    volume: 0.1
+    pitch: 1
+    isLooping: 0
+    isPlaying: 0
+    playOnAwake: 0
+  - name: Attack
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 20996e20bc8eca14ebccb9d98c29a635, type: 3}
+    volume: 0.1
+    pitch: 1
+    isLooping: 0
+    isPlaying: 0
+    playOnAwake: 0
+  - name: Parry
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 20996e20bc8eca14ebccb9d98c29a635, type: 3}
+    volume: 0.1
+    pitch: 1.5
+    isLooping: 0
+    isPlaying: 0
+    playOnAwake: 0
+  - name: Dialogue
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: b6b53d49091832c4087d8adefdce053b, type: 3}
+    volume: 0.1
+    pitch: 1
+    isLooping: 0
+    isPlaying: 0
+    playOnAwake: 0
+  - name: BreakObject
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 30eb8c2183e8a0b418b2f7605cd0143c, type: 3}
+    volume: 0.1
+    pitch: 1
+    isLooping: 0
+    isPlaying: 0
+    playOnAwake: 0
+  - name: Die
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 74e198b10b0c9824ca118d267f83c6ee, type: 3}
+    volume: 0.05
+    pitch: 1
+    isLooping: 0
+    isPlaying: 0
+    playOnAwake: 0
+  - name: Hurt
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 08be5553d363335478c32160bf6915f6, type: 3}
+    volume: 0.05
+    pitch: 1
+    isLooping: 0
+    isPlaying: 0
+    playOnAwake: 0
+  - name: Gate
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 41516cc431939fa458f176db4cf01f95, type: 3}
+    volume: 0.1
+    pitch: 1
+    isLooping: 0
+    isPlaying: 0
+    playOnAwake: 0
+  - name: Dash
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: e43b78b7bc1abee48b94da7e62a509ec, type: 3}
+    volume: 0.1
+    pitch: 1
+    isLooping: 0
+    isPlaying: 0
+    playOnAwake: 0
+  - name: WallJump
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 4ae2f1de900d7154ba12e75415d318e8, type: 3}
+    volume: 0.1
+    pitch: 1
+    isLooping: 0
+    isPlaying: 0
+    playOnAwake: 0
+  - name: LeverOn
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 251362a8999eb1a41819ccacaf9fb957, type: 3}
+    volume: 0.05
+    pitch: 1
+    isLooping: 0
+    isPlaying: 0
+    playOnAwake: 0
+  - name: LeverOff
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: fb1f7623d2972814a8a570d1a4771701, type: 3}
+    volume: 0.05
+    pitch: 1
+    isLooping: 0
+    isPlaying: 0
+    playOnAwake: 0
+  - name: Page
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 9e05215e2cb32f244a38090b27af7e06, type: 3}
+    volume: 0.1
+    pitch: 1
+    isLooping: 0
+    isPlaying: 0
+    playOnAwake: 0
+  - name: Music
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 8858d876bdb2bfb4ab8f0e09a518369f, type: 3}
+    volume: 0.01
+    pitch: 1
+    isLooping: 1
+    isPlaying: 0
+    playOnAwake: 1
+  - name: EnemyHurt
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 1a8c9f79d28510449b39e279c83cf9db, type: 3}
+    volume: 0.05
+    pitch: 1
+    isLooping: 0
+    isPlaying: 0
+    playOnAwake: 0
+  - name: CrumblingPlatform
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 80ea463431411ee40bef1ac044de712e, type: 3}
+    volume: 0.1
+    pitch: 1
+    isLooping: 0
+    isPlaying: 0
+    playOnAwake: 0
+  - name: SuccessfulParry
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: 044d6c7f210893c418d5077569e37226, type: 3}
+    volume: 0.1
+    pitch: 1
+    isLooping: 0
+    isPlaying: 0
+    playOnAwake: 0
