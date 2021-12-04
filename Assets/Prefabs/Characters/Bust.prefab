@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectPrefab: {fileID: 4340157073500710030, guid: 1fdbd91d3e8d9514fbf866a7de39c410, type: 3}
-  timeToBreak: 0
+  timeToBreak: 0.2
   shouldDestroy: 1
 --- !u!95 &1686846674
 Animator:
