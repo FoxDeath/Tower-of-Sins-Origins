@@ -188,6 +188,11 @@ public class PlayerCombat : MonoBehaviour
             }
         }
 
+        if(!FindObjectOfType<ChiselCheck>().chisel)
+        {
+            return;
+        }
+
         if(onWall)
         {
             SetAttackDirection(1);
