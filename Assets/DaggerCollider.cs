@@ -11,7 +11,7 @@ public class DaggerCollider : MonoBehaviour
     bool attacking = false;
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if(other.CompareTag("Governor"))
+        if(other.CompareTag("Governor") && daggers.Count > 0)
         {
             if(!other.GetComponent<Governor>().hasDagger)
             {
