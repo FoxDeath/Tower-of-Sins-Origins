@@ -142,9 +142,10 @@ public class PlayerInput : MonoBehaviour
         if(context.action.phase == InputActionPhase.Started && GetComponentInChildren<DevotedTutorial>().intwo)
             {
                 GetComponentInChildren<DevotedTutorial>().EndPrompt();
-            }
 
             JumpPerformed(context);
+            }
+
 
             return;
         }

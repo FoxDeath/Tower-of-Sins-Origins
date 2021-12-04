@@ -1189,26 +1189,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 221427085, guid: e505954ef580521409003e7ce2ae814e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 221427085, guid: e505954ef580521409003e7ce2ae814e, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 221427086, guid: e505954ef580521409003e7ce2ae814e, type: 3}
-      propertyPath: m_Size.x
-      value: 37.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 221427086, guid: e505954ef580521409003e7ce2ae814e, type: 3}
-      propertyPath: m_Size.y
-      value: 43.206264
-      objectReference: {fileID: 0}
-    - target: {fileID: 221427086, guid: e505954ef580521409003e7ce2ae814e, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 2ef0a4b5f56e1b841ae40e128a3dde5e, type: 3}
     - target: {fileID: 1275047809177933142, guid: e505954ef580521409003e7ce2ae814e, type: 3}
       propertyPath: m_Name
       value: Devoted One
