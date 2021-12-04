@@ -15,6 +15,7 @@ TagManager:
   - EnvironmentalDanger
   - CrumblingPlatform
   - Governor
+  - Ground
   layers:
   - Default
   - TransparentFX
