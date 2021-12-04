@@ -37,17 +37,23 @@ public class DaggerCollider : MonoBehaviour
             daggers[0].axis = Vector3.zero;
             daggers[0].radiusSpeed = 5;
 
+            daggers[0].GetComponent<CircleCollider2D>().enabled = true;
+
 
             yield return new WaitForSeconds(.5f);
 
             attacking = false;
 
+            if(daggers.Count > 0)
+            {
+            daggers[0].GetComponent<CircleCollider2D>().enabled = false;
 
             daggers[0].center = transform.parent.parent;
 
             daggers[0].axis = Vector3.forward;
 
             daggers[0].radiusSpeed = 1;
+            }
         }
         
         yield return null;
