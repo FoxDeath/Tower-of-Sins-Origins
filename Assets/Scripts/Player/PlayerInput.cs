@@ -77,6 +77,16 @@ public class PlayerInput : MonoBehaviour
     {
         if(!isRecievingInput)
         {
+            if(GetComponentInChildren<EmpoweringOneTutorial>())
+        if(context.action.phase == InputActionPhase.Started && (GetComponentInChildren<EmpoweringOneTutorial>().inone || GetComponentInChildren<EmpoweringOneTutorial>().intwo))
+            {
+                GetComponentInChildren<EmpoweringOneTutorial>().EndPrompt();
+                
+                moveInput = 0;
+
+                AttackPerformed(context);
+            }
+
             return;
         }
 
@@ -177,6 +187,12 @@ public class PlayerInput : MonoBehaviour
         if(context.ReadValue<Vector2>().x != 0 && GetComponentInChildren<DevotedTutorial>().inone)
             {
                 GetComponentInChildren<DevotedTutorial>().EndPrompt();
+            }
+
+            if(GetComponentInChildren<EmpoweringOneTutorial>())
+        if(context.ReadValue<Vector2>().x != 0 && (GetComponentInChildren<EmpoweringOneTutorial>().inthree || GetComponentInChildren<EmpoweringOneTutorial>().infour))
+            {
+                GetComponentInChildren<EmpoweringOneTutorial>().EndPrompt();
             }
 
             return;
