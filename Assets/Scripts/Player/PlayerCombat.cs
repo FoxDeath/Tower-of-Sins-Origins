@@ -119,24 +119,9 @@ public class PlayerCombat : MonoBehaviour
             return;
         }
 
-        CheckDirectionChange();
+        //CheckDirectionChange();
         
-        if(onWall)
-        {
-            StartCombo(onWall);
-        }
-        else if(shouldFirstAttack && !onWall)
-        {
-            StartCombo();
-        }
-        else if(!shouldFirstAttack && canContinueCombo)
-        {
-            ContinueCombo();
-        }
-        else if(!canContinueCombo)
-        {
-            StopCombo();
-        }
+        StartCombo();
     }
 
     /*Checks if the direction of the attack changed, if yes it resets the visual cue, stops the attack coroutine 
@@ -190,6 +175,17 @@ public class PlayerCombat : MonoBehaviour
         if(attackCoroutine != null)
         {
             StopCoroutine(attackCoroutine);
+        }
+
+        if(FindObjectOfType<DaggerCollider>())
+        {
+            if(FindObjectOfType<DaggerCollider>().daggers.Count > 0 && !FindObjectOfType<ChiselCheck>().chisel)
+            {
+
+            StartCoroutine(FindObjectOfType<DaggerCollider>().Attack());
+
+            return;
+            }
         }
 
         if(onWall)
@@ -339,7 +335,7 @@ public class PlayerCombat : MonoBehaviour
             return parryDamage;
         }
 
-        return currentAttack.damage * attackDamageMultiplier;
+        return 10;
     }
 
     public float GetAttackDirection()

@@ -13,6 +13,7 @@ public class ObjectDestructible : MonoBehaviour
 
     [SerializeField] bool shouldDestroy;
     private bool canSpawn;
+    private bool destroyed = false;
     #endregion
 
     #region MonoBehaviour Methods
@@ -39,9 +40,14 @@ public class ObjectDestructible : MonoBehaviour
     #region Normal Methods
     public void DestroyObject()
     {
-        animator.SetTrigger("Break");
+        if(destroyed)
+        {
+            return;
+        }
 
-        Destroy(gameObject.GetComponent<BoxCollider2D>());
+        destroyed = true;
+
+        animator.SetTrigger("Break");
 
         audioManager.Play("BreakObject");
 

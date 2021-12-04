@@ -39,6 +39,9 @@ public class PlayerHealth : MonoBehaviour
     [Tooltip("How many health increments you regenerate when the enemy dies due to the envirovment")]
     [SerializeField] int environmentalDeathRegenMultiplier = 1;
 
+
+    [SerializeField] bool isDevoted = false;
+
     //How much you regenerate per hit after the first hit (maxEnergyPoints / regenIncrement) * regenMultiplier which comes from the combo attacks)
     private float regenAmount;
     
@@ -79,7 +82,7 @@ public class PlayerHealth : MonoBehaviour
     #region  Normal Methods
     public void Hurt(float damage, bool isKnockedBack = true, bool isStaggering = true)
     {
-        if(PlayerState.GetIsRecovering())
+        if(PlayerState.GetIsRecovering() || ((PlayerState.GetState() == PlayerState.State.Dashing || PlayerState.GetState() == PlayerState.State.Sliding) && isDevoted))
         {
             return;
         }

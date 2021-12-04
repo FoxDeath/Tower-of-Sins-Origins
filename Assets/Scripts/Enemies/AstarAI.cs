@@ -612,7 +612,7 @@ public abstract class AstarAI : MonoBehaviour
     //The only way velocity is applied to the enemy. Except when it's zeroed out.
     protected void ApplyVelocity(Vector2 dir)
     {
-        myRigidbody.velocity += dir.normalized * 1000f;
+        myRigidbody.velocity += dir.normalized * 10000f;
     }
 
     protected void ClampVelocityMagnitude(float magnitude)
@@ -984,22 +984,7 @@ public abstract class AstarAI : MonoBehaviour
             commitedDirection = -GetPlayerNormal();
         }
 
-        ZeroOutVelocity();
-
-        enemyState.SetState(EnemyState.State.KnockedBack);
-        
-        yield return new WaitForSeconds(0.2f);
-        
-        priorityDestination = null;
-
-        if(isUsingGravity)
-        {
-            enemyState.SetState(EnemyState.State.Falling);
-        }
-        else
-        {
-            enemyState.SetState(EnemyState.State.Stationary);
-        }
+        yield return new WaitForSeconds(2f);
     }
 
     public IEnumerator StaggeredBehaviour()

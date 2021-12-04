@@ -98,7 +98,7 @@ public class AirEnemyMovement : AstarAI
 
         //The enemy won't run movement behaviours while it's attacking or knocked back.
         if(enemyState.GetState() == EnemyState.State.Attacking || currentDirection == null
-        || enemyState.GetState() == EnemyState.State.KnockedBack || enemyState.GetState() == EnemyState.State.Staggered)
+        || enemyState.GetState() == EnemyState.State.Dead || enemyState.GetState() == EnemyState.State.Staggered)
         {
             return;
         }
@@ -349,7 +349,10 @@ public class AirEnemyMovement : AstarAI
             break;
             
             case EnemyState.State.Dead:
-                ClampVelocityComplexAxes(0f, 0f, -maxVerticalSpeed, 0f);
+          
+                ApplyVelocity(commitedDirection);
+
+                ClampVelocityMagnitude(100f);
             break;
             
             case EnemyState.State.Sleeping:
@@ -430,6 +433,7 @@ public class AirEnemyMovement : AstarAI
     //This determines the new patrol direction when needed.
     private IEnumerator PatrolDirectionChangeBehaviour(Vector2 normal)
     {
+        if(enemyState.GetState() != EnemyState.State.Dead)
         commitedDirection = Quaternion.AngleAxis(Random.Range(-70, 70), Vector3.forward) * normal;
 
         ZeroOutVelocity();

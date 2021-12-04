@@ -14,6 +14,7 @@ TagManager:
   - RecoveryPoint
   - EnvironmentalDanger
   - CrumblingPlatform
+  - Governor
   layers:
   - Default
   - TransparentFX
@@ -23,8 +24,8 @@ TagManager:
   - UI
   - Ground
   - Wall
-  - 
-  - 
+  - Enemy
+  - EnemyTrigger
   - 
   - 
   - 
