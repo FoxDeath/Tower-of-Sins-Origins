@@ -100,6 +100,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idle: 0
+  hasDagger: 0
+  direction: -1
 --- !u!50 &3260402751636703534
 Rigidbody2D:
   serializedVersion: 4
