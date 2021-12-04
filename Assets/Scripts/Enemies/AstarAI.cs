@@ -612,7 +612,7 @@ public abstract class AstarAI : MonoBehaviour
     //The only way velocity is applied to the enemy. Except when it's zeroed out.
     protected void ApplyVelocity(Vector2 dir)
     {
-        myRigidbody.velocity += dir.normalized * 1000f;
+        myRigidbody.velocity += dir.normalized * 10000f;
     }
 
     protected void ClampVelocityMagnitude(float magnitude)

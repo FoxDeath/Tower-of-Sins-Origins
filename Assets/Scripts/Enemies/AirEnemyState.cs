@@ -79,11 +79,11 @@ public class AirEnemyState : EnemyState
 
                 astarAI.ZeroOutVelocity();
 
+                astarAI.SetIsUsingGravity(true);
+
                 StartCoroutine(astarAI.KnockedBackBehaviour());
 
                 astarAI.UnfreezeRigidbodyRotation();
-
-                //astarAI.SetIsUsingGravity(true);
 
                 animController.SetTrigger(EnemyAnimationController.triggers.Death);
             break;

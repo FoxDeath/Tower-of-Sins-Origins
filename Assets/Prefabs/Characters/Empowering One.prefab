@@ -552,7 +552,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3496124335903249017}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!198 &388100387
 ParticleSystem:
@@ -4312,7 +4312,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 1024
+      m_Bits: 1216
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -9194,7 +9194,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 1536
+      m_Bits: 1216
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -10410,7 +10410,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3496124335903249017}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!198 &736526773
 ParticleSystem:
@@ -20383,7 +20383,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 1024
+      m_Bits: 1216
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -21744,6 +21744,7 @@ GameObject:
   - component: {fileID: 269823311}
   - component: {fileID: 402584427252063203}
   - component: {fileID: 4446397120473546998}
+  - component: {fileID: 5375567296085115249}
   m_Layer: 3
   m_Name: Empowering One
   m_TagString: Player
@@ -22294,6 +22295,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneObject: {fileID: 102900000, guid: 680a058fba5848b46977e6ab722d637f, type: 3}
+--- !u!114 &5375567296085115249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275047809177933142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9999a7a5b396ef48897b7057a90cfcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadPauseMenu: {fileID: 0}
+  firstPauseMenuButton: {fileID: 0}
 --- !u!1 &1396772576897171848
 GameObject:
   m_ObjectHideFlags: 0
@@ -22887,11 +22902,11 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9163816377971853612}
-  - {fileID: 7728822996448254647}
   - {fileID: 5403517241759317133}
-  - {fileID: 543191206}
   - {fileID: 736526771}
+  - {fileID: 543191206}
   - {fileID: 388100385}
+  - {fileID: 7728822996448254647}
   m_Father: {fileID: 221427085}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -24717,7 +24732,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3496124335903249017}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!198 &1473460400113104352
 ParticleSystem:
@@ -28477,7 +28492,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 1536
+      m_Bits: 1216
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -34086,7 +34101,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3496124335903249017}
-  m_RootOrder: 1
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!198 &7728822996448254645
 ParticleSystem:
@@ -37904,7 +37919,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 1536
+      m_Bits: 1216
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5

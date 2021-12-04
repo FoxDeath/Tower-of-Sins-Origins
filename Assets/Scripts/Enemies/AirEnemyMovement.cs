@@ -352,7 +352,7 @@ public class AirEnemyMovement : AstarAI
           
                 ApplyVelocity(commitedDirection);
 
-                ClampVelocityMagnitude(25f);
+                ClampVelocityMagnitude(100f);
             break;
             
             case EnemyState.State.Sleeping:
@@ -433,6 +433,7 @@ public class AirEnemyMovement : AstarAI
     //This determines the new patrol direction when needed.
     private IEnumerator PatrolDirectionChangeBehaviour(Vector2 normal)
     {
+        if(enemyState.GetState() != EnemyState.State.Dead)
         commitedDirection = Quaternion.AngleAxis(Random.Range(-70, 70), Vector3.forward) * normal;
 
         ZeroOutVelocity();
