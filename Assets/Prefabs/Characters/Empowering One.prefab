@@ -22107,7 +22107,7 @@ MonoBehaviour:
   wallSlideSpeed: 20
   wallJumpTime: 0.29
   wallJumpSpeed: {x: 45, y: 45}
-  upgradedWallJump: 1
+  upgradedWallJump: 0
 --- !u!114 &3990095766614571364
 MonoBehaviour:
   m_ObjectHideFlags: 0
