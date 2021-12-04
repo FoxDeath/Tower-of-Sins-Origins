@@ -65,7 +65,7 @@ public class EmpoweringOneTutorial : MonoBehaviour
             break;
             
             case 4:
-                tutorialText.text = "Climb up the wall to move forward";
+                tutorialText.text = "Jump up the wall to move forward";
 
                 infour = true;
             break;
