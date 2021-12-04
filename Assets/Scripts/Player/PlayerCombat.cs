@@ -177,6 +177,17 @@ public class PlayerCombat : MonoBehaviour
             StopCoroutine(attackCoroutine);
         }
 
+        if(FindObjectOfType<DaggerCollider>())
+        {
+            if(FindObjectOfType<DaggerCollider>().daggers.Count > 0 && !FindObjectOfType<ChiselCheck>().chisel)
+            {
+
+            StartCoroutine(FindObjectOfType<DaggerCollider>().Attack());
+
+            return;
+            }
+        }
+
         if(onWall)
         {
             SetAttackDirection(1);

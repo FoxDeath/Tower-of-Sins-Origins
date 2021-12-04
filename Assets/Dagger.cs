@@ -26,4 +26,15 @@ public Transform center;
         var desiredPosition = (transform.position - center.localPosition).normalized * radius + center.localPosition;
         transform.position = Vector3.MoveTowards(transform.position, desiredPosition, radiusSpeed);
     }
+
+    private void OnTriggerStay2D(Collider2D other) {
+        if(other.gameObject.CompareTag("DestructibleObject"))
+        {
+                other.GetComponent<ObjectDestructible>().DestroyObject();
+
+                FindObjectOfType<DaggerCollider>().daggers.Remove(this);
+
+                Destroy(gameObject);
+        }
+    }
 }
