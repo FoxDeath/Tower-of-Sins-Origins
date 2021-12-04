@@ -38,12 +38,11 @@ public class PlayerPhysicsCalculations : MonoBehaviour
         
         hitH = Physics2D.BoxCast(playerCollider.bounds.center, new Vector2(1f, 0.5f), 0f, Vector2.right * PlayerMovement.facing, playerCollider.bounds.size.x - 4f * 0.5f, wallLayer);
         
-        hitHangUp = Physics2D.Raycast(transform.position + new Vector3(0f, 4f), new Vector2(1f, 0f) * PlayerMovement.facing, 2.8f, groundLayer);
+        hitHangUp = Physics2D.Raycast(transform.position + new Vector3(0f, 4f), new Vector2(1f, 0f) * PlayerMovement.facing, 4f, groundLayer);
         
-        hitHangDown = Physics2D.Raycast(transform.position + new Vector3(0f, 2.5f), new Vector2(1f, 0f) * PlayerMovement.facing, 2.8f, groundLayer);
+        hitHangDown = Physics2D.Raycast(transform.position + new Vector3(0f, 2.5f), new Vector2(1f, 0f) * PlayerMovement.facing, 4f, groundLayer);
         
-        hitSlide = Physics2D.Raycast(transform.position + new Vector3(0f, -0.4f), new Vector2(0f, 1f), 3.3f, wallLayer);
-    }
+        hitSlide = Physics2D.Raycast(transform.position + new Vector3(0f, -0.4f), new Vector2(0f, 1f), 3.3f, wallLayer);    }
 
     private void ColiderCalculation(RaycastHit2D hitV, RaycastHit2D hitH)
     {
