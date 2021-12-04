@@ -22105,7 +22105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wallSlideSpeed: 20
-  wallJumpTime: 0
+  wallJumpTime: 0.29
   wallJumpSpeed: {x: 45, y: 45}
   upgradedWallJump: 1
 --- !u!114 &3990095766614571364
