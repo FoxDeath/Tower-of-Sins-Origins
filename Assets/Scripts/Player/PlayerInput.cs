@@ -304,6 +304,15 @@ public class PlayerInput : MonoBehaviour
     {
         if(!isRecievingInput)
         {
+            if(GetComponentInChildren<GuideTutorial>())
+        if(context.action.phase == InputActionPhase.Started && GetComponentInChildren<GuideTutorial>().inone)
+            {
+                GetComponentInChildren<GuideTutorial>().EndPrompt();
+                
+                moveInput = 0;
+
+                InteractPerformed(context);
+            }
             return;
         }
 
