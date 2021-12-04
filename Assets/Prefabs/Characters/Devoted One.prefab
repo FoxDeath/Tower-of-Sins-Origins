@@ -22569,7 +22569,7 @@ MonoBehaviour:
   knockBackStrenght: 40
   recoveryTime: 1
   maxEnergyPoints: 100
-  movementSpeed: 35
+  movementSpeed: 60
   jumpForce: 65
   jumpTime: 0.2
 --- !u!114 &402584427252063203
