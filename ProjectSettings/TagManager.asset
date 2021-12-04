@@ -16,6 +16,7 @@ TagManager:
   - CrumblingPlatform
   - Governor
   - Ground
+  - 1
   layers:
   - Default
   - TransparentFX
