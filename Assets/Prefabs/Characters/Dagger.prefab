@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 4436594652243782844}
   - component: {fileID: 3551146223351906827}
   - component: {fileID: -7645319417114486426}
-  m_Layer: 0
+  - component: {fileID: 5324561157218714005}
+  m_Layer: 1
   m_Name: Dagger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,8 +102,8 @@ MonoBehaviour:
   center: {fileID: 0}
   axis: {x: 0, y: 0, z: 1}
   radius: 10
-  radiusSpeed: 100
-  rotationSpeed: 10
+  radiusSpeed: 1
+  rotationSpeed: 8
 --- !u!58 &-7645319417114486426
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -114,6 +115,22 @@ CircleCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
+--- !u!58 &5324561157218714005
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4340157073500710030}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

@@ -14,6 +14,9 @@ public Transform center;
     void Start()
     {
         center = GameObject.FindGameObjectWithTag("Player").transform;
+
+        FindObjectOfType<DaggerCollider>().daggers.Add(this);
+        
     }
 
     // Update is called once per frame

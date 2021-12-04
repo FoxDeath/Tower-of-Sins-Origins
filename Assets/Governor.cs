@@ -7,6 +7,10 @@ public class Governor : MonoBehaviour
     public bool idle = true;
 
     private Rigidbody2D rb;
+    
+    public bool hasDagger = false;
+
+    public int direction = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +26,19 @@ public class Governor : MonoBehaviour
             return;
         }
 
-        rb.velocity = new Vector2(40, 0);
+        rb.velocity = new Vector2(40 * direction, 0);
+    }
+
+    public void StopIdle()
+    {
+        StartCoroutine(StopIdleBehaviour());
+    }
+
+    private IEnumerator StopIdleBehaviour()
+    {
+        yield return new WaitForSeconds(2);
+        {
+            idle = false;
+        }
     }
 }
