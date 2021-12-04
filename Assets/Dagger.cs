@@ -27,7 +27,7 @@ public Transform center;
         transform.position = Vector3.MoveTowards(transform.position, desiredPosition, radiusSpeed);
     }
 
-    private void OnTriggerStay2D(Collider2D other) {
+    private void OnTriggerEnter2D(Collider2D other) {
         if(other.gameObject.CompareTag("DestructibleObject"))
         {
                 other.GetComponent<ObjectDestructible>().DestroyObject();
