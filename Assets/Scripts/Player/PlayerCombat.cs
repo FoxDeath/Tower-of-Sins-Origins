@@ -119,24 +119,9 @@ public class PlayerCombat : MonoBehaviour
             return;
         }
 
-        CheckDirectionChange();
+        //CheckDirectionChange();
         
-        if(onWall)
-        {
-            StartCombo(onWall);
-        }
-        else if(shouldFirstAttack && !onWall)
-        {
-            StartCombo();
-        }
-        else if(!shouldFirstAttack && canContinueCombo)
-        {
-            ContinueCombo();
-        }
-        else if(!canContinueCombo)
-        {
-            StopCombo();
-        }
+        StartCombo();
     }
 
     /*Checks if the direction of the attack changed, if yes it resets the visual cue, stops the attack coroutine 
