@@ -99,7 +99,7 @@ public class EnemyHealth : MonoBehaviour
 
         uiController.SetBossEnergyBarState(false);
 
-        Destroy(gameObject, 0.5f);
+        Destroy(gameObject, 2f);
     }
 
     private void PlayerHitParticles(Vector2 playerPosition)

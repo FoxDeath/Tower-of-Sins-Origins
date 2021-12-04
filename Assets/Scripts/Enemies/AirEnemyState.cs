@@ -75,12 +75,15 @@ public class AirEnemyState : EnemyState
 
             case State.Dead:
                 currentState = State.Dead;
+                astarAI.ZeroOutCommitedDirection();
 
                 astarAI.ZeroOutVelocity();
 
+                StartCoroutine(astarAI.KnockedBackBehaviour());
+
                 astarAI.UnfreezeRigidbodyRotation();
 
-                astarAI.SetIsUsingGravity(true);
+                //astarAI.SetIsUsingGravity(true);
 
                 animController.SetTrigger(EnemyAnimationController.triggers.Death);
             break;

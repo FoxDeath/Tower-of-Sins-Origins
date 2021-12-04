@@ -38,27 +38,15 @@ public class PlayerWeaponController : MonoBehaviour
 
             if(!raycastHit2D.collider && !other.gameObject.tag.Equals("EnemyAttack"))
             {
-                playerCombat.SuccessfulAttack(other.transform.position, false, true);
-
                 bool attackFromAbove = false;
 
-                if(playerCombat.GetAttackDirection() < 0f)
-                {
-                    attackFromAbove = true;
-                }
-
-                bool startOfCombo = true;
-
-                if(!playerCombat.GetShouldFirstAttack())
-                {
-                    startOfCombo = false;
-                }
+                bool startOfCombo = false;
 
                 enemyHealth.Hurt(playerCombat.GetDamage(), transform.position, attackFromAbove, startOfCombo);
             }
         }
 
-        if(PlayerState.GetState() == PlayerState.State.Attacking)
+        if(PlayerState.GetState() == PlayerState.State.Sliding || PlayerState.GetState() == PlayerState.State.Dashing)
         {
             //To Do: Add sound for hitting wall
             if(other.gameObject.tag.Equals("Wall"))

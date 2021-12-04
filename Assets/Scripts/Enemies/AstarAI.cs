@@ -984,22 +984,7 @@ public abstract class AstarAI : MonoBehaviour
             commitedDirection = -GetPlayerNormal();
         }
 
-        ZeroOutVelocity();
-
-        enemyState.SetState(EnemyState.State.KnockedBack);
-        
-        yield return new WaitForSeconds(0.2f);
-        
-        priorityDestination = null;
-
-        if(isUsingGravity)
-        {
-            enemyState.SetState(EnemyState.State.Falling);
-        }
-        else
-        {
-            enemyState.SetState(EnemyState.State.Stationary);
-        }
+        yield return new WaitForSeconds(2f);
     }
 
     public IEnumerator StaggeredBehaviour()

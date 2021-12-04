@@ -14,7 +14,7 @@ public class UIController : MonoBehaviour
     #region MonoBehavior Methods
     private void Awake() 
     {
-        Transform ui = GameObject.Find("Player").transform.Find("UI");
+        Transform ui = GameObject.Find("UI").transform;
 
         energyImage = ui.Find("EnergyBar").Find("EnergyBarFillArea").Find("FillRight").GetComponent<Image>();
 

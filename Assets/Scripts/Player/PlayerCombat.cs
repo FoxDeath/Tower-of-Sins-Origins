@@ -339,7 +339,7 @@ public class PlayerCombat : MonoBehaviour
             return parryDamage;
         }
 
-        return currentAttack.damage * attackDamageMultiplier;
+        return 10;
     }
 
     public float GetAttackDirection()
