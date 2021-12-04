@@ -46,7 +46,7 @@ public class PlayerWeaponController : MonoBehaviour
             }
         }
 
-        if(PlayerState.GetState() == PlayerState.State.Sliding || PlayerState.GetState() == PlayerState.State.Dashing)
+        if(PlayerState.GetState() == PlayerState.State.Sliding || PlayerState.GetState() == PlayerState.State.Dashing || PlayerState.GetState() == PlayerState.State.Attacking)
         {
             //To Do: Add sound for hitting wall
             if(other.gameObject.tag.Equals("Wall"))

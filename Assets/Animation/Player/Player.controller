@@ -12,8 +12,7 @@ AnimatorStateTransition:
     m_ConditionEvent: Jumping
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 7483996642346049815, guid: b3199797d65ce453097999260b0a68fd,
-    type: 2}
+  m_DstState: {fileID: 7483996642346049815, guid: b3199797d65ce453097999260b0a68fd, type: 2}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -598,8 +597,7 @@ AnimatorStateTransition:
     m_ConditionEvent: Jumping
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 7483996642346049815, guid: b3199797d65ce453097999260b0a68fd,
-    type: 2}
+  m_DstState: {fileID: 7483996642346049815, guid: b3199797d65ce453097999260b0a68fd, type: 2}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -627,8 +625,7 @@ AnimatorStateTransition:
     m_ConditionEvent: Running
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: -2517762146789907827, guid: b3199797d65ce453097999260b0a68fd,
-    type: 2}
+  m_DstState: {fileID: -2517762146789907827, guid: b3199797d65ce453097999260b0a68fd, type: 2}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -653,8 +650,7 @@ AnimatorStateTransition:
     m_ConditionEvent: Running
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 3869334289009182264, guid: b3199797d65ce453097999260b0a68fd,
-    type: 2}
+  m_DstState: {fileID: 3869334289009182264, guid: b3199797d65ce453097999260b0a68fd, type: 2}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -705,8 +701,7 @@ AnimatorStateTransition:
     m_ConditionEvent: Parrying
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 3647207043676966259, guid: b3199797d65ce453097999260b0a68fd,
-    type: 2}
+  m_DstState: {fileID: 3647207043676966259, guid: b3199797d65ce453097999260b0a68fd, type: 2}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -733,127 +728,127 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: OnWall
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Facing
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Run
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: WallSlide
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Die
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Attack
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Parry
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: StanceChange
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Stun
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Slide
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Hang
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Stagger
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Climb
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Cast
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Jump
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: WallJump
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Fall
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Land
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Idle
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Dash
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -1104,8 +1099,7 @@ AnimatorStateTransition:
     m_ConditionEvent: Jumping
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 7483996642346049815, guid: b3199797d65ce453097999260b0a68fd,
-    type: 2}
+  m_DstState: {fileID: 7483996642346049815, guid: b3199797d65ce453097999260b0a68fd, type: 2}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -1495,8 +1489,7 @@ AnimatorStateTransition:
     m_ConditionEvent: Attacking
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 3869334289009182264, guid: b3199797d65ce453097999260b0a68fd,
-    type: 2}
+  m_DstState: {fileID: 3869334289009182264, guid: b3199797d65ce453097999260b0a68fd, type: 2}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -1521,8 +1514,7 @@ AnimatorStateTransition:
     m_ConditionEvent: Stunned
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: -2043968533472699321, guid: b3199797d65ce453097999260b0a68fd,
-    type: 2}
+  m_DstState: {fileID: -2043968533472699321, guid: b3199797d65ce453097999260b0a68fd, type: 2}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -1598,8 +1590,7 @@ AnimatorStateTransition:
     m_ConditionEvent: Running
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: -2517762146789907827, guid: b3199797d65ce453097999260b0a68fd,
-    type: 2}
+  m_DstState: {fileID: -2517762146789907827, guid: b3199797d65ce453097999260b0a68fd, type: 2}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
