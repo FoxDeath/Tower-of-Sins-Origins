@@ -27,6 +27,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -119,7 +120,7 @@ MonoBehaviour:
   - name: Die
     source: {fileID: 0}
     clip: {fileID: 8300000, guid: 74e198b10b0c9824ca118d267f83c6ee, type: 3}
-    volume: 0.05
+    volume: 0
     pitch: 1
     isLooping: 0
     isPlaying: 0
@@ -183,7 +184,7 @@ MonoBehaviour:
   - name: Music
     source: {fileID: 0}
     clip: {fileID: 8300000, guid: 8858d876bdb2bfb4ab8f0e09a518369f, type: 3}
-    volume: 0.01
+    volume: 0.2
     pitch: 1
     isLooping: 1
     isPlaying: 0

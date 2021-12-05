@@ -562,7 +562,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6779136143969457852, guid: 086a24bfff28f469ca637263c8a7f7b6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.6723113
+      value: -3.6
       objectReference: {fileID: 0}
     - target: {fileID: 6779136143969457852, guid: 086a24bfff28f469ca637263c8a7f7b6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -598,7 +598,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6779136143969457853, guid: 086a24bfff28f469ca637263c8a7f7b6, type: 3}
       propertyPath: orthographic size
-      value: 3.813899
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 086a24bfff28f469ca637263c8a7f7b6, type: 3}
@@ -708,7 +708,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1057989434229240531, guid: 76e112f485d2a4399a5914b40ed604fe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.6723113
+      value: -3.6
       objectReference: {fileID: 0}
     - target: {fileID: 1057989434229240531, guid: 76e112f485d2a4399a5914b40ed604fe, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6468,10 +6468,6 @@ PrefabInstance:
     - target: {fileID: 3785812231961600981, guid: 60913f79eec0e6049b48ad3976ba9787, type: 3}
       propertyPath: sounds.Array.data[21].pitch
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3785812231961600981, guid: 60913f79eec0e6049b48ad3976ba9787, type: 3}
-      propertyPath: sounds.Array.data[17].volume
-      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3785812231961600981, guid: 60913f79eec0e6049b48ad3976ba9787, type: 3}
       propertyPath: sounds.Array.data[21].volume
