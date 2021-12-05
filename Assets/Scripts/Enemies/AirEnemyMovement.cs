@@ -342,9 +342,9 @@ public class AirEnemyMovement : AstarAI
             break;
             
             case EnemyState.State.Following:
-                if(Vector2.Distance(myRigidbody.position, player.position) > 50f)
+                if(Vector2.Distance(myRigidbody.position, player.position) > 60f)
                 {
-                    ClampVelocityMagnitude(playerMovement.speed * 1.2f);
+                    ClampVelocityMagnitude(playerMovement.speed * 1.1f);
                 }
                 else
                 {
