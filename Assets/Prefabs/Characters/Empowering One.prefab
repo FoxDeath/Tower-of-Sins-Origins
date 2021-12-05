@@ -22490,6 +22490,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gravity: 5
   maxFallSpeed: 70
+  speed: 0
 --- !u!114 &7349583412444357656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23287,7 +23288,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1761965855944208435}
   - component: {fileID: 1301384687}
-  m_Layer: 3
+  m_Layer: 12
   m_Name: EnemyAwarenessBaseline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
