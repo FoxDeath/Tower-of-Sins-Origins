@@ -37,9 +37,9 @@ namespace TOS.Dialogue
         #region Normal Methods
         public void RunDialogue()
         {
-            if(PlayerState.GetState() != PlayerState.State.Attacking && PlayerState.GetState() != PlayerState.State.Parrying
-            && PlayerState.GetState() != PlayerState.State.Jumping && PlayerState.GetState() != PlayerState.State.Falling)
-            {
+            // if(PlayerState.GetState() != PlayerState.State.Attacking && PlayerState.GetState() != PlayerState.State.Parrying
+            // && PlayerState.GetState() != PlayerState.State.Jumping && PlayerState.GetState() != PlayerState.State.Falling)
+            // {
                 if(!isTyping)
                 {
                     if(!isDialoguing)
@@ -66,12 +66,12 @@ namespace TOS.Dialogue
                         currentDialogue = dialogue;
                     }
                 }
-            }
+            // }
         }
 
         private void StartDialogue(Dialogue newDialogue)
         {
-            PlayerInput.GetInputActions().Disable();
+            // PlayerInput.GetInputActions().Disable();
 
             PlayerState.SetState(PlayerState.State.Dialoguing);
 
@@ -109,7 +109,7 @@ namespace TOS.Dialogue
 
             PlayerState.SetState(PlayerState.State.Idle);
 
-            PlayerInput.GetInputActions().Enable();
+            // PlayerInput.GetInputActions().Enable();
         }
 
         //Updates the UI text.
@@ -121,7 +121,7 @@ namespace TOS.Dialogue
             {
                 isTyping = true;
                 
-                StartCoroutine(SoundBehaviour());
+                // StartCoroutine(SoundBehaviour());
 
                 StartCoroutine(TypewriterBehaviour());
             }
@@ -141,17 +141,17 @@ namespace TOS.Dialogue
             isTyping = false;
         }
 
-        private IEnumerator SoundBehaviour()
-        {
-            while(isTyping)
-            {
-                audioManager.Play("Dialogue");
+        // private IEnumerator SoundBehaviour()
+        // {
+        //     while(isTyping)
+        //     {
+        //         audioManager.Play("Dialogue");
 
-                yield return new WaitForSeconds(0.05f);
-            }
+        //         yield return new WaitForSeconds(0.05f);
+        //     }
 
-            audioManager.Stop("Dialogue");
-        }
+        //     audioManager.Stop("Dialogue");
+        // }
         #endregion
     }
 }

@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8868435778655511091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8913e1fe684e0f444bc4e19729d1fd72, type: 3}
+  m_Name: 055ab4d3-a365-4ca5-8226-6d6b7465c05e
+  m_EditorClassIdentifier: 
+  text: 
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 514
+    y: 125
+    width: 200
+    height: 100
+  isAQuest: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 331ce3a7b1410d84cb07ff7e9f37cf37, type: 3}
+  m_Name: Test
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 8416646060163914067}
+  - {fileID: 3149564073743480784}
+  - {fileID: -8868435778655511091}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &3149564073743480784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8913e1fe684e0f444bc4e19729d1fd72, type: 3}
+  m_Name: 82cd08f0-4889-479c-b613-a1579651bf86
+  m_EditorClassIdentifier: 
+  text: Second sentance on its way.
+  children:
+  - 055ab4d3-a365-4ca5-8226-6d6b7465c05e
+  rect:
+    serializedVersion: 2
+    x: 264
+    y: 125
+    width: 200
+    height: 100
+  isAQuest: 0
+--- !u!114 &8416646060163914067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8913e1fe684e0f444bc4e19729d1fd72, type: 3}
+  m_Name: 3ee7a4fd-905f-49ad-bd55-ccf5b703fb74
+  m_EditorClassIdentifier: 
+  text: This is the start of the first sentance.
+  children:
+  - 82cd08f0-4889-479c-b613-a1579651bf86
+  rect:
+    serializedVersion: 2
+    x: 14
+    y: 125
+    width: 200
+    height: 100
+  isAQuest: 0

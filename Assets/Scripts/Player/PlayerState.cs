@@ -292,10 +292,6 @@ public class PlayerState : MonoBehaviour
 
                 playerMovement.Gravity();
 
-                PlayerMovement.StopMoving();
-
-                PlayerMovement.StopJumping();
-
                 playerMovement.VelocityClamp();
             break;
 
@@ -402,7 +398,7 @@ public class PlayerState : MonoBehaviour
             break;
 
             case State.Dialoguing:
-                playerInput.InteractPerformedGameplay();
+                //playerInput.InteractPerformedGameplay();
             break;
 
             default:
@@ -715,10 +711,10 @@ public class PlayerState : MonoBehaviour
             break;
 
             case State.Dialoguing:
-                if(PlayerState.state != State.Dialoguing && GetIsGrounded())
-                {
+                // if(PlayerState.state != State.Dialoguing && GetIsGrounded())
+                // {
                     PlayerState.state = state;
-                }
+                // }
             break;
 
             case State.Idle:
