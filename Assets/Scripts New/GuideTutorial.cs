@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Playables;
 using UnityEngine.InputSystem;
 
 public class GuideTutorial : MonoBehaviour
 {
     [SerializeField] TMP_Text tutorialText;
     [SerializeField] GameObject tutorialCanvas;
+    [SerializeField] PlayableAsset asset;
 
     public bool inone = false;
     bool overone = false;
@@ -61,5 +63,9 @@ public class GuideTutorial : MonoBehaviour
         PlayerInput.SetIsRecievingInput(true);
 
         Time.timeScale = 1f;
+
+        
+                    FindObjectOfType<PlayableDirector>().playableAsset = asset;
+            FindObjectOfType<PlayableDirector>().Play();
     }
 }

@@ -150,14 +150,15 @@ public class ShitDialogue : MonoBehaviour
                 dialogueText.text = "";
                 dialogueText.color = Color.white;
                 StartCoroutine(TypewriterBehaviour(Color.white, Color.white, Color.white,
-                ""));
+                "The Guide provided us with an ideal. An image to live up to.",
+                "That day on the battlefield, each human heart kindled a new flame, all burning with the same desire of becoming the masters of their own destiny."));
             break;
 
             case 19:
                 dialogueText.text = "";
                 dialogueText.color = Color.white;
                 StartCoroutine(TypewriterBehaviour(Color.white, Color.white, Color.white,
-                ""));
+                "They introduced us to the power of virtue, bringing balance to our Breath and allowing us to end the era of Chaos."));
             break;
 
             case 20:
