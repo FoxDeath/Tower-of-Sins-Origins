@@ -7,7 +7,7 @@ public class ShitDialogue : MonoBehaviour
     [SerializeField] TMP_Text dialogueText;
 
     //Storyteller white, Naive blue, Eager green, Bored gray
-    private void Dialogue(int i)
+    public void Dialogue(int i)
     {
         switch(i)
         {
@@ -15,154 +15,158 @@ public class ShitDialogue : MonoBehaviour
             case 1:
                 dialogueText.text = "";
                 dialogueText.color = Color.white;
-                StartCoroutine(TypewriterBehaviour("An endless blanket of darkness covers our chaotic lands."));
+                StartCoroutine(TypewriterBehaviour(Color.white, Color.white, Color.white,
+                "An endless blanket of darkness covers our chaotic lands."));
             break;
 
             case 2:
                 dialogueText.text = "";
                 dialogueText.color = Color.white;
-                StartCoroutine(TypewriterBehaviour("The Cardinal Sins take hold of people, luring them into madness and transforming them, until they are nothing but mindless monsters, praying on their former human allies."));
-
-                dialogueText.text = "";
-                dialogueText.color = Color.blue;
-                StartCoroutine(TypewriterBehaviour("I'll become a mighty warrior and slay all the monsters. You'll see!"));
+                StartCoroutine(TypewriterBehaviour(Color.white, Color.blue, Color.white,
+                    "The Cardinal Sins take hold of people, luring them into madness and transforming them to their liking.",
+                    "They feed on humans until they are nothing but mindless monsters that prey on their former human allies.",
+                    "I'll become a mighty warrior and slay all the monsters. You'll see!"));
             break;
 
             case 3:
                 dialogueText.text = "";
                 dialogueText.color = Color.white;
-                StartCoroutine(TypewriterBehaviour("Thankfully that won't be necessary. The Age of Chaos ended a long long time ago, thanks to three mighty spirits."));
-
-                dialogueText.text = "";
-                dialogueText.color = Color.green;
-                StartCoroutine(TypewriterBehaviour("Those statues, there!"));
-
-                dialogueText.text = "";
-                dialogueText.color = Color.gray;
-                StartCoroutine(TypewriterBehaviour("Ahh... For Height's sake! Not again!"));
+                StartCoroutine(TypewriterBehaviour(Color.green, Color.gray, Color.white,
+                "Thankfully that won't be necessary. The Age of Chaos ended a long long time ago, thanks to three mighty spirits.",
+                "Those statues, there!", 
+                "Ahh... For Height's sake! Not again!"));
             break;
             #endregion
             #region Myth 1
             case 4:
                 dialogueText.text = "";
                 dialogueText.color = Color.white;
-                StartCoroutine(TypewriterBehaviour("Those statues indeed. Except their real counterparts were far more... otherworldly."));
-
-                dialogueText.text = "";
-                dialogueText.color = Color.white;
-                StartCoroutine(TypewriterBehaviour("Out of the three, the Devoted One was the first to appear."));
+                StartCoroutine(TypewriterBehaviour(Color.white, Color.white, Color.white,
+                "Those statues indeed. Except their real counterparts were far more... otherworldly.",
+                "Out of the three, the Devoted One was the first to appear."));
             break;
 
             case 5:
                 dialogueText.text = "";
                 dialogueText.color = Color.white;
-                StartCoroutine(TypewriterBehaviour("They used their remarkable strength to set us free from the shackles of temptation."));
+                StartCoroutine(TypewriterBehaviour(Color.white, Color.white, Color.white,
+                "They used their remarkable strength to set us free from the shackles of temptation."));
             break;
 
             case 6:
                 dialogueText.text = "";
                 dialogueText.color = Color.white;
-                StartCoroutine(TypewriterBehaviour("As if compelled by some ethereal selflessness, they came to aid and protect us in our time of need."));
+                StartCoroutine(TypewriterBehaviour(Color.white, Color.white, Color.white,
+                "As if compelled by some ethereal selflessness, they came to aid and protect us in our time of need."));
             break;
 
             case 7:
                 dialogueText.text = "";
                 dialogueText.color = Color.blue;
-                StartCoroutine(TypewriterBehaviour("Why did they help us?"));
+                StartCoroutine(TypewriterBehaviour(Color.white, Color.white, Color.white,
+                "Why did they help us?"));
             break;
 
             case 8:
                 dialogueText.text = "";
                 dialogueText.color = Color.white;
-                StartCoroutine(TypewriterBehaviour("Perhaps they saw something in us. Or they just pitied us, like we pity a bird with a broken wing."));
+                StartCoroutine(TypewriterBehaviour(Color.white, Color.white, Color.white,
+                "Perhaps they saw something in us. Or they just pitied us, like we pity a bird with a broken wing."));
             break;
 
             case 9:
                 dialogueText.text = "";
                 dialogueText.color = Color.gray;
-                StartCoroutine(TypewriterBehaviour("Nonetheless, they helped us. Let us move on!"));
+                StartCoroutine(TypewriterBehaviour(Color.white, Color.white, Color.white,
+                "Nonetheless, they helped us. Let us move on!"));
             break;
             #endregion
             #region Myth 2
             case 10:
                 dialogueText.text = "";
                 dialogueText.color = Color.white;
-                StartCoroutine(TypewriterBehaviour("The next arrival was the..."));
-
-                dialogueText.text = "";
-                dialogueText.color = Color.green;
-                StartCoroutine(TypewriterBehaviour("...the Empowering One. Who helped humanity realise their own potential."));
-
-                dialogueText.text = "";
-                dialogueText.color = Color.white;
-                StartCoroutine(TypewriterBehaviour("Precisely, little one. It's a joy to recite these tales for such an eager audience."));
+                StartCoroutine(TypewriterBehaviour(Color.green, Color.white, Color.white,
+                "The next arrival was the...",
+                "...the Empowering One. Who helped humanity realise their own potential.",
+                "Precisely, little one. It's a joy to recite these tales for such an eager audience."));
             break;
 
             case 11:
                 dialogueText.text = "";
                 dialogueText.color = Color.white;
-                StartCoroutine(TypewriterBehaviour("The Empowering One gathered all the handiwork of humans and created countless weapons for the eradication of the chaos that plagued the lands."));
+                StartCoroutine(TypewriterBehaviour(Color.white, Color.white, Color.white,
+                "The Empowering One gathered all the handiwork of humans and created countless weapons for the eradication of the chaos that plagued the lands."));
             break;
 
             case 12:
                 dialogueText.text = "";
                 dialogueText.color = Color.white;
-                StartCoroutine(TypewriterBehaviour("They presented the humans with these weapons forged out of their own creations. Arming them for what was to come."));
+                StartCoroutine(TypewriterBehaviour(Color.white, Color.white, Color.white,
+                "They presented the humans with these weapons forged out of their own creations. Arming them for what was to come."));
             break;
 
             case 13:
                 dialogueText.text = "";
                 dialogueText.color = Color.white;
-                StartCoroutine(TypewriterBehaviour("Being compelled by the Empowering One, the humans were ready to take the fight to the Cardinal Sins."));
+                StartCoroutine(TypewriterBehaviour(Color.white, Color.white, Color.white,
+                "Being compelled by the Empowering One, the humans were ready to take the fight to the Cardinal Sins."));
             break;
 
             case 14:
                 dialogueText.text = "";
                 dialogueText.color = Color.blue;
-                StartCoroutine(TypewriterBehaviour("Sooooo... they taught us how to fight?"));
+                StartCoroutine(TypewriterBehaviour(Color.white, Color.white, Color.white,
+                "Sooooo... they taught us how to fight?"));
             break;
 
             case 15:
                 dialogueText.text = "";
                 dialogueText.color = Color.white;
-                StartCoroutine(TypewriterBehaviour("They gave us a chance, rather. Illuminating a path out of the darkness."));
+                StartCoroutine(TypewriterBehaviour(Color.white, Color.white, Color.white,
+                "They gave us a chance, rather. Illuminating a path out of the darkness."));
             break;
             #endregion
             #region Myth 3
             case 16:
                 dialogueText.text = "";
                 dialogueText.color = Color.white;
-                StartCoroutine(TypewriterBehaviour(""));
+                StartCoroutine(TypewriterBehaviour(Color.white, Color.white, Color.white,
+                ""));
             break;
 
             case 17:
                 dialogueText.text = "";
                 dialogueText.color = Color.white;
-                StartCoroutine(TypewriterBehaviour(""));
+                StartCoroutine(TypewriterBehaviour(Color.white, Color.white, Color.white,
+                ""));
             break;
 
             case 18:
                 dialogueText.text = "";
                 dialogueText.color = Color.white;
-                StartCoroutine(TypewriterBehaviour(""));
+                StartCoroutine(TypewriterBehaviour(Color.white, Color.white, Color.white,
+                ""));
             break;
 
             case 19:
                 dialogueText.text = "";
                 dialogueText.color = Color.white;
-                StartCoroutine(TypewriterBehaviour(""));
+                StartCoroutine(TypewriterBehaviour(Color.white, Color.white, Color.white,
+                ""));
             break;
 
             case 20:
                 dialogueText.text = "";
                 dialogueText.color = Color.white;
-                StartCoroutine(TypewriterBehaviour(""));
+                StartCoroutine(TypewriterBehaviour(Color.white, Color.white, Color.white,
+                ""));
             break;
 
             case 21:
                 dialogueText.text = "";
                 dialogueText.color = Color.white;
-                StartCoroutine(TypewriterBehaviour(""));
+                StartCoroutine(TypewriterBehaviour(Color.white, Color.white, Color.white,
+                ""));
             break;
             #endregion
             #region Epilogue
@@ -170,13 +174,63 @@ public class ShitDialogue : MonoBehaviour
         }
     }
 
-    private IEnumerator TypewriterBehaviour(string text)
+    private IEnumerator TypewriterBehaviour(Color text2Color , Color text3Color, Color text4Color, string text, string text2 = "", string text3 = "", string text4 = "")
         {
             foreach(char c in text)
             {
                 dialogueText.text += c;
 
                 yield return new WaitForSeconds(0.05f);
+            }
+            
+            yield return new WaitForSeconds(1f);
+
+            if(!text2.Equals(""))
+            {
+                dialogueText.text = "";
+
+                dialogueText.color = text2Color;
+                
+                foreach(char c in text2)
+                {
+                    dialogueText.text += c;
+
+                    yield return new WaitForSeconds(0.05f);
+                }
+
+                yield return new WaitForSeconds(1f);
+            }
+            
+            if(!text3.Equals(""))
+            {
+                dialogueText.text = "";
+
+                dialogueText.color = text3Color;
+
+                foreach(char c in text3)
+                {
+                    dialogueText.text += c;
+
+                    yield return new WaitForSeconds(0.05f);
+                }
+
+                yield return new WaitForSeconds(1f);
+            }
+            
+            if(!text4.Equals(""))
+            {
+                dialogueText.text = "";
+
+                dialogueText.color = text4Color;
+
+                foreach(char c in text4)
+                {
+                    dialogueText.text += c;
+
+                    yield return new WaitForSeconds(0.05f);
+                }
+
+                yield return new WaitForSeconds(1f);
             }
         }
 }
