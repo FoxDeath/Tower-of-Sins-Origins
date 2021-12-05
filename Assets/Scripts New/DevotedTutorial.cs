@@ -47,25 +47,25 @@ public class DevotedTutorial : MonoBehaviour
         switch(i)
         {
             case 1:
-                tutorialText.text = "Move using A and D";
+                tutorialText.text = "Hold A/D to move.";
 
                 inone = true;
             break;
 
             case 2:
-                tutorialText.text = "Hold SPACE to jump over the rubble";
+                tutorialText.text = "Hold SPACE to clear obstacles.";
 
                 intwo = true;
             break;
 
             case 3:
-                tutorialText.text = "Press SHIFT destroy the rubble and save the citizens";
+                tutorialText.text = "Dash into rubble with SHIFT to free the trapped citizens.";
 
                 inthree = true;
             break;
             
             case 4:
-                tutorialText.text = "Press SHIFT to charge into the Shadows and kill them";
+                tutorialText.text = "Defend the humans by dashing into the enemies with SHIFT.";
 
                 infour = true;
             break;

@@ -28,7 +28,7 @@ public class GuideTutorial : MonoBehaviour
         switch(i)
         {
             case 1:
-                tutorialText.text = "Press E to transport the City";
+                tutorialText.text = "Gather your last Breath with E";
 
                 inone = true;
             break;

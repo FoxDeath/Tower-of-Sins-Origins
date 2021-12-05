@@ -47,25 +47,25 @@ public class EmpoweringOneTutorial : MonoBehaviour
         switch(i)
         {
             case 1:
-                tutorialText.text = "Press Click or J to destroy the bust and create a dagger";
+                tutorialText.text = "Destroy busts to create tools with LMB or J.";
 
                 inone = true;
             break;
 
             case 2:
-                tutorialText.text = "Press Click or J to destroy blocked doorway by using a dagger";
+                tutorialText.text = "Clear blocked doorways with a dagger by pressing LMB or J.";
 
                 intwo = true;
             break;
 
             case 3:
-                tutorialText.text = "Move near a citizen to give a dagger so they can defend themselves";
+                tutorialText.text = "Approach citizens to hand them daggers.";
 
                 inthree = true;
             break;
             
             case 4:
-                tutorialText.text = "Jump up the wall to move forward";
+                tutorialText.text = "Climb the wall to advance.";
 
                 infour = true;
             break;
