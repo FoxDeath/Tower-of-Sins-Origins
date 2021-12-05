@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 
-public class DestroyableRubble : MonoBehaviour
+public class SpecialEnemyDevoted : MonoBehaviour
 {
     [SerializeField] PlayableAsset asset;
     private void OnDestroy() {

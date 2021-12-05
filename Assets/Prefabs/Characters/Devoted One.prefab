@@ -158,7 +158,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1268651751
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 2ef0a4b5f56e1b841ae40e128a3dde5e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10497,7 +10497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0.016062737, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -22061,6 +22061,7 @@ GameObject:
   - component: {fileID: 402584427252063203}
   - component: {fileID: 4446397120473546998}
   - component: {fileID: 9119434427870122087}
+  - component: {fileID: 142749248}
   m_Layer: 3
   m_Name: Devoted One
   m_TagString: Player
@@ -22615,6 +22616,51 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadPauseMenu: {fileID: 0}
   firstPauseMenuButton: {fileID: 0}
+--- !u!320 &142749248
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275047809177933142}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 0145ee68f01d55547b9c34575c349e8c, type: 2}
+  m_InitialState: 0
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: -8720827133984075462, guid: 7ad45a8e9c1e84e44b1cd85609212ddc, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -7697282896007637736, guid: ed2bbd871346b44419d6cc2127df28ef, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -2116481525857564347, guid: ed2bbd871346b44419d6cc2127df28ef, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -5417789484949954489, guid: ed2bbd871346b44419d6cc2127df28ef, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -2598055233699946663, guid: ed2bbd871346b44419d6cc2127df28ef, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -979607246521974578, guid: ed2bbd871346b44419d6cc2127df28ef, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 3337773983303961779, guid: ed2bbd871346b44419d6cc2127df28ef, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 9101834304193255752, guid: ed2bbd871346b44419d6cc2127df28ef, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -2556592569050922292, guid: 0145ee68f01d55547b9c34575c349e8c, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -3186395225905764425, guid: 0145ee68f01d55547b9c34575c349e8c, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 747410959415826161, guid: 0145ee68f01d55547b9c34575c349e8c, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 234319451714256907, guid: 4d55798d2f10a6647b16c9bd13e8f031, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -1558713127858834270, guid: 4d55798d2f10a6647b16c9bd13e8f031, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 7121287660701363269, guid: 4d55798d2f10a6647b16c9bd13e8f031, type: 2}
+    value: {fileID: 0}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &1396772576897171848
 GameObject:
   m_ObjectHideFlags: 0
@@ -23357,7 +23403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4901367, g: 0.41037735, b: 0.5471698, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -24798,17 +24844,17 @@ RectTransform:
   m_GameObject: {fileID: 3718312979684640910}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.9374, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3370422170827074177}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.25, y: -175}
-  m_SizeDelta: {x: 400.00006, y: 160.00002}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 64.96668, y: -60}
+  m_SizeDelta: {x: 400.00006, y: 160}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &3718312979684640909
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24847,7 +24893,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190335
-  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -47610,7 +47656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

@@ -185,6 +185,8 @@ public class ShitDialogue : MonoBehaviour
             
             yield return new WaitForSeconds(1f);
 
+            dialogueText.text = "";
+
             if(!text2.Equals(""))
             {
                 dialogueText.text = "";
@@ -199,6 +201,8 @@ public class ShitDialogue : MonoBehaviour
                 }
 
                 yield return new WaitForSeconds(1f);
+
+                dialogueText.text = "";
             }
             
             if(!text3.Equals(""))
@@ -215,6 +219,8 @@ public class ShitDialogue : MonoBehaviour
                 }
 
                 yield return new WaitForSeconds(1f);
+                
+                dialogueText.text = "";
             }
             
             if(!text4.Equals(""))
@@ -231,6 +237,8 @@ public class ShitDialogue : MonoBehaviour
                 }
 
                 yield return new WaitForSeconds(1f);
+
+                dialogueText.text = "";
             }
         }
 }
