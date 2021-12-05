@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Street.unity
     guid: 0d1dc41a66e16074fb6ad338437a6e8e
   - enabled: 1
+    path: Assets/Scenes/Campfire 2.unity
+    guid: 3abb62e70907543419e72242d3b78342
+  - enabled: 1
     path: Assets/Scenes/Building.unity
     guid: ed720963ced8595439b9034200598314
   - enabled: 1

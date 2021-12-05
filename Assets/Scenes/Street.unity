@@ -212,11 +212,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1057989434229240531, guid: 76e112f485d2a4399a5914b40ed604fe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 835.3
+      value: -30.6
       objectReference: {fileID: 0}
     - target: {fileID: 1057989434229240531, guid: 76e112f485d2a4399a5914b40ed604fe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.2
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 1057989434229240531, guid: 76e112f485d2a4399a5914b40ed604fe, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3083,7 +3083,7 @@ PrefabInstance:
     - target: {fileID: 142749248, guid: e505954ef580521409003e7ce2ae814e, type: 3}
       propertyPath: m_PlayableAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 7ad45a8e9c1e84e44b1cd85609212ddc, type: 2}
+      objectReference: {fileID: 11400000, guid: 2839a8977dd88b94d953f506196edc3c, type: 2}
     - target: {fileID: 142749248, guid: e505954ef580521409003e7ce2ae814e, type: 3}
       propertyPath: m_SceneBindings.Array.size
       value: 18
@@ -3230,7 +3230,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8510683830252437231, guid: e505954ef580521409003e7ce2ae814e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 838
+      value: -30.6
       objectReference: {fileID: 0}
     - target: {fileID: 8510683830252437231, guid: e505954ef580521409003e7ce2ae814e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3357,11 +3357,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6779136143969457852, guid: 086a24bfff28f469ca637263c8a7f7b6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 835.3
+      value: -30.6
       objectReference: {fileID: 0}
     - target: {fileID: 6779136143969457852, guid: 086a24bfff28f469ca637263c8a7f7b6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.000001
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 6779136143969457852, guid: 086a24bfff28f469ca637263c8a7f7b6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3401,7 +3401,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6779136143969457853, guid: 086a24bfff28f469ca637263c8a7f7b6, type: 3}
       propertyPath: orthographic size
-      value: 40
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 086a24bfff28f469ca637263c8a7f7b6, type: 3}
