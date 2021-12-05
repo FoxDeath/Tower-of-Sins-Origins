@@ -9,6 +9,8 @@ public class ShitDialogue : MonoBehaviour
     //Storyteller white, Naive blue, Eager green, Bored red
     public void Dialogue(int i)
     {
+        StopAllCoroutines();
+
         switch(i)
         {
             #region Prologue
@@ -256,5 +258,7 @@ public class ShitDialogue : MonoBehaviour
 
                 yield return new WaitForSeconds(1f);
             }
+
+            dialogueText.text = "";
         }
 }
