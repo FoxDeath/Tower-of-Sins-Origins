@@ -95,7 +95,8 @@ public class ShitDialogue : MonoBehaviour
                 dialogueText.text = "";
                 dialogueText.color = Color.white;
                 StartCoroutine(TypewriterBehaviour(Color.white, Color.white, Color.white,
-                "The Empowering One gathered all the handiwork of humans and created countless weapons for the eradication of the chaos that plagued the lands."));
+                "The Empowering One gathered all the handiwork of humans and formed weapons out of it.",
+                "Weapons, created specifically for the eradication of the chaos that plagued the lands."));
             break;
 
             case 12:
@@ -129,16 +130,20 @@ public class ShitDialogue : MonoBehaviour
             #region Myth 3
             case 16:
                 dialogueText.text = "";
-                dialogueText.color = Color.white;
-                StartCoroutine(TypewriterBehaviour(Color.white, Color.white, Color.white,
-                ""));
+                dialogueText.color = Color.gray;
+                StartCoroutine(TypewriterBehaviour(Color.gray, Color.white, Color.white,
+                "And finally the focal point of the night.",
+                "The Guide who led the charge against the forces of chaos, surrounded by the legions of determined humans.",
+                "It seems, despite our best efforts to ignore them, some things just can’t cease to linger in our minds.",
+                "Even if it's just a silly myth. Isn't that correct?"));
             break;
 
             case 17:
                 dialogueText.text = "";
-                dialogueText.color = Color.white;
+                dialogueText.color = Color.gray;
                 StartCoroutine(TypewriterBehaviour(Color.white, Color.white, Color.white,
-                ""));
+                "I warn you old man, don't you get on my nerves!",
+                "You did play your part in the past, Firstborn, so I'll grant your wish."));
             break;
 
             case 18:
@@ -201,8 +206,6 @@ public class ShitDialogue : MonoBehaviour
                 }
 
                 yield return new WaitForSeconds(1f);
-
-                dialogueText.text = "";
             }
             
             if(!text3.Equals(""))
@@ -219,8 +222,6 @@ public class ShitDialogue : MonoBehaviour
                 }
 
                 yield return new WaitForSeconds(1f);
-                
-                dialogueText.text = "";
             }
             
             if(!text4.Equals(""))
@@ -237,8 +238,6 @@ public class ShitDialogue : MonoBehaviour
                 }
 
                 yield return new WaitForSeconds(1f);
-
-                dialogueText.text = "";
             }
         }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class Governor : MonoBehaviour
 {
@@ -9,6 +10,10 @@ public class Governor : MonoBehaviour
     private Rigidbody2D rb;
     
     public bool hasDagger = false;
+
+    public bool isSpecial = false;
+    [SerializeField] PlayableAsset asset;
+
 
     public int direction = 1;
 
@@ -39,6 +44,12 @@ public class Governor : MonoBehaviour
         yield return new WaitForSeconds(2);
         {
             idle = false;
+
+            if(isSpecial)
+            {
+            FindObjectOfType<PlayableDirector>().playableAsset = asset;
+            FindObjectOfType<PlayableDirector>().Play();
+            }
         }
     }
 }

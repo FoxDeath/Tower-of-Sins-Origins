@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Building.unity
     guid: ed720963ced8595439b9034200598314
   - enabled: 1
+    path: Assets/Scenes/Campfire 3.unity
+    guid: f208642eedc472240a467ea92f4ddf53
+  - enabled: 1
     path: Assets/Scenes/Rooftop.unity
     guid: bfe959426d68bf342964af6db3826239
   m_configObjects: {}
