@@ -40,6 +40,8 @@ public abstract class AstarAI : MonoBehaviour
     protected EnemyCombat enemyCombat;
 
     protected PlayerHealth playerHealth;
+    
+    protected PlayerMovement playerMovement;
 
     protected PlayerState playerState;
 
@@ -140,6 +142,8 @@ public abstract class AstarAI : MonoBehaviour
             playerHealth = player.gameObject.GetComponent<PlayerHealth>();
 
             playerState = player.GetComponent<PlayerState>();
+
+            playerMovement = player.GetComponent<PlayerMovement>();
             
             targetExtents = player.GetComponent<CapsuleCollider2D>().bounds.extents;
 

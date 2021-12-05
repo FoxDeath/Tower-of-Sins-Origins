@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
     static public float facing;
     [SerializeField] float gravity = 20f;
     [SerializeField] float maxFallSpeed = 70f;
-    private float speed;
+    public float speed;
     private float jumpForce;
     private float jumpTime;
     #endregion

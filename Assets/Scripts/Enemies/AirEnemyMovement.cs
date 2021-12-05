@@ -45,6 +45,7 @@ public class AirEnemyMovement : AstarAI
     #endregion
 
     #region MonoBehaviour Methods
+
     private new void Start()
     {
         base.Start();
@@ -341,7 +342,14 @@ public class AirEnemyMovement : AstarAI
             break;
             
             case EnemyState.State.Following:
-                ClampVelocityMagnitude(speed);
+                if(Vector2.Distance(myRigidbody.position, player.position) > 40f)
+                {
+                    ClampVelocityMagnitude(playerMovement.speed * 1.2f);
+                }
+                else
+                {
+                    ClampVelocityMagnitude(speed);
+                }
             break;
             
             case EnemyState.State.Stationary:
