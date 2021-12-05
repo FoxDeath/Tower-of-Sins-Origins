@@ -134,6 +134,15 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Restart"",
+                    ""type"": ""Button"",
+                    ""id"": ""018664e3-d8bf-4b75-a02d-af3beb97354c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -521,6 +530,17 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                     ""action"": ""Teleport"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""020a8e05-8af3-4089-ad1a-b62381456cd8"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Restart"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -569,6 +589,7 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
         m_Gameplay_DeathCheck = m_Gameplay.FindAction("DeathCheck", throwIfNotFound: true);
         m_Gameplay_WalkToggle = m_Gameplay.FindAction("WalkToggle", throwIfNotFound: true);
         m_Gameplay_Teleport = m_Gameplay.FindAction("Teleport", throwIfNotFound: true);
+        m_Gameplay_Restart = m_Gameplay.FindAction("Restart", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -640,6 +661,7 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
     private readonly InputAction m_Gameplay_DeathCheck;
     private readonly InputAction m_Gameplay_WalkToggle;
     private readonly InputAction m_Gameplay_Teleport;
+    private readonly InputAction m_Gameplay_Restart;
     public struct GameplayActions
     {
         private @PlayerControls m_Wrapper;
@@ -656,6 +678,7 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
         public InputAction @DeathCheck => m_Wrapper.m_Gameplay_DeathCheck;
         public InputAction @WalkToggle => m_Wrapper.m_Gameplay_WalkToggle;
         public InputAction @Teleport => m_Wrapper.m_Gameplay_Teleport;
+        public InputAction @Restart => m_Wrapper.m_Gameplay_Restart;
         public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -701,6 +724,9 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                 @Teleport.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnTeleport;
                 @Teleport.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnTeleport;
                 @Teleport.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnTeleport;
+                @Restart.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnRestart;
+                @Restart.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnRestart;
+                @Restart.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnRestart;
             }
             m_Wrapper.m_GameplayActionsCallbackInterface = instance;
             if (instance != null)
@@ -741,6 +767,9 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                 @Teleport.started += instance.OnTeleport;
                 @Teleport.performed += instance.OnTeleport;
                 @Teleport.canceled += instance.OnTeleport;
+                @Restart.started += instance.OnRestart;
+                @Restart.performed += instance.OnRestart;
+                @Restart.canceled += instance.OnRestart;
             }
         }
     }
@@ -777,5 +806,6 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
         void OnDeathCheck(InputAction.CallbackContext context);
         void OnWalkToggle(InputAction.CallbackContext context);
         void OnTeleport(InputAction.CallbackContext context);
+        void OnRestart(InputAction.CallbackContext context);
     }
 }

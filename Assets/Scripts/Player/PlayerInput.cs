@@ -340,7 +340,15 @@ public class PlayerInput : MonoBehaviour
     {
         if(context.action.phase == InputActionPhase.Started)
         {
-            pauseMenuController.MenuInput();
+            SceneManager.LoadScene(0);
+        }
+    }
+
+    public void RestartScene(InputAction.CallbackContext context)
+    {
+        if(context.action.phase == InputActionPhase.Started)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 

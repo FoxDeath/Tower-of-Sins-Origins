@@ -11,7 +11,8 @@
                     "id": "1dae91cc-e628-4fcf-9b23-e983ed1e2452",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Parry",
@@ -19,7 +20,8 @@
                     "id": "ac49545e-dee7-42df-8d7e-ba5f170061e3",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "SpecialAbility",
@@ -27,7 +29,8 @@
                     "id": "3dacd8e4-3511-43d6-b9fa-90ec4bd0bb8c",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Jump",
@@ -35,7 +38,8 @@
                     "id": "32a4be92-970a-4281-bb6b-3252d3591df9",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Press(behavior=2)"
+                    "interactions": "Press(behavior=2)",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Move",
@@ -43,7 +47,8 @@
                     "id": "bae291e6-df68-4321-a646-b71325939079",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Look",
@@ -51,7 +56,8 @@
                     "id": "8027a05c-9a30-4c4d-9aaf-da82ad0fe5cb",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Slide/Dash",
@@ -59,7 +65,8 @@
                     "id": "2ec5765f-7837-4772-a2f5-0cd68c9cb50a",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Interact",
@@ -67,7 +74,8 @@
                     "id": "8b81495b-2a55-4730-ac0a-ffa9b63fd939",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "PauseMenu",
@@ -75,7 +83,8 @@
                     "id": "6c71b0dd-040c-4c8b-8205-e1cb7328807f",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "DeathCheck",
@@ -83,7 +92,8 @@
                     "id": "9aaad03e-91ff-4aea-bc6a-05e1f174295d",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "WalkToggle",
@@ -91,7 +101,8 @@
                     "id": "81b7fe10-5f93-4742-bea8-f3d40384bfea",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Teleport",
@@ -99,7 +110,17 @@
                     "id": "75d197ab-8b51-4544-b0ad-019ff9e2f5ec",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Restart",
+                    "type": "Button",
+                    "id": "018664e3-d8bf-4b75-a02d-af3beb97354c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -485,6 +506,17 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Teleport",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "020a8e05-8af3-4089-ad1a-b62381456cd8",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Restart",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

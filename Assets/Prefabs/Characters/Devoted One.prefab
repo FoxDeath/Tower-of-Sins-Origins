@@ -22464,6 +22464,22 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 75d197ab-8b51-4544-b0ad-019ff9e2f5ec
     m_ActionName: Gameplay/Teleport[/Keyboard/i]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1865726720642401113}
+        m_TargetAssemblyTypeName: PlayerInput, Assembly-CSharp
+        m_MethodName: RestartScene
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 018664e3-d8bf-4b75-a02d-af3beb97354c
+    m_ActionName: Gameplay/Restart[/Keyboard/r]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Gameplay
