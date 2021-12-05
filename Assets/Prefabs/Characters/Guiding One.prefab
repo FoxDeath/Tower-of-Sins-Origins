@@ -22656,7 +22656,7 @@ MonoBehaviour:
   parryDuration: 0.25
   attackDamageMultiplier: 1
   knockBackStrenght: 40
-  recoveryTime: 1
+  recoveryTime: 4
   maxEnergyPoints: 100
   movementSpeed: 60
   jumpForce: 65
