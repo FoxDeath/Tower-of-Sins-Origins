@@ -6,7 +6,7 @@ public class ShitDialogue : MonoBehaviour
 {
     [SerializeField] TMP_Text dialogueText;
 
-    //Storyteller white, Naive blue, Eager green, Bored gray
+    //Storyteller white, Naive blue, Eager green, Bored red
     public void Dialogue(int i)
     {
         switch(i)
@@ -31,7 +31,7 @@ public class ShitDialogue : MonoBehaviour
             case 3:
                 dialogueText.text = "";
                 dialogueText.color = Color.white;
-                StartCoroutine(TypewriterBehaviour(Color.green, Color.gray, Color.white,
+                StartCoroutine(TypewriterBehaviour(Color.green, Color.red, Color.white,
                 "Thankfully that won't be necessary. The Age of Chaos ended a long long time ago, thanks to three mighty spirits.",
                 "Those statues, there!", 
                 "Ahh... For Height's sake! Not again!"));
@@ -76,7 +76,7 @@ public class ShitDialogue : MonoBehaviour
 
             case 9:
                 dialogueText.text = "";
-                dialogueText.color = Color.gray;
+                dialogueText.color = Color.red;
                 StartCoroutine(TypewriterBehaviour(Color.white, Color.white, Color.white,
                 "Nonetheless, they helped us. Let us move on!"));
             break;
@@ -130,8 +130,8 @@ public class ShitDialogue : MonoBehaviour
             #region Myth 3
             case 16:
                 dialogueText.text = "";
-                dialogueText.color = Color.gray;
-                StartCoroutine(TypewriterBehaviour(Color.gray, Color.white, Color.white,
+                dialogueText.color = Color.red;
+                StartCoroutine(TypewriterBehaviour(Color.red, Color.white, Color.white,
                 "And finally the focal point of the night.",
                 "The Guide who led the charge against the forces of chaos, surrounded by the legions of determined humans.",
                 "It seems, despite our best efforts to ignore them, some things just can’t cease to linger in our minds.",
@@ -140,7 +140,7 @@ public class ShitDialogue : MonoBehaviour
 
             case 17:
                 dialogueText.text = "";
-                dialogueText.color = Color.gray;
+                dialogueText.color = Color.red;
                 StartCoroutine(TypewriterBehaviour(Color.white, Color.white, Color.white,
                 "I warn you old man, don't you get on my nerves!",
                 "You did play your part in the past, Firstborn, so I'll grant your wish."));
@@ -174,7 +174,7 @@ public class ShitDialogue : MonoBehaviour
 
             case 21:
                 dialogueText.text = "";
-                dialogueText.color = Color.gray;
+                dialogueText.color = Color.red;
                 StartCoroutine(TypewriterBehaviour(Color.white, Color.white, Color.white,
                 "Are you not gonna tell them about the Heights, old man?"));
             break;
