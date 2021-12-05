@@ -405,11 +405,6 @@ public class PlayerState : MonoBehaviour
             return;
         }
     }
-    
-    private void OnDrawGizmos() 
-    {
-        Handles.Label(new Vector3(transform.position.x, transform.position.y + 5, transform.position.z), state.ToString());
-    }
     #endregion
 
     #region  Normal Methods
