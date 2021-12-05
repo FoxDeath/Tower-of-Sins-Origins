@@ -209,8 +209,6 @@ public class ShitDialogue : MonoBehaviour
             
             yield return new WaitForSeconds(1f);
 
-            dialogueText.text = "";
-
             if(!text2.Equals(""))
             {
                 dialogueText.text = "";
