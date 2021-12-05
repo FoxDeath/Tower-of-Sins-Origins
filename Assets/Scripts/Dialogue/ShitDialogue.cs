@@ -160,22 +160,40 @@ public class ShitDialogue : MonoBehaviour
                 StartCoroutine(TypewriterBehaviour(Color.white, Color.white, Color.white,
                 "They introduced us to the power of virtue, bringing balance to our Breath and allowing us to end the era of Chaos."));
             break;
+            #endregion
+            #region Epilogue
+            
 
             case 20:
                 dialogueText.text = "";
-                dialogueText.color = Color.white;
+                dialogueText.color = Color.blue;
                 StartCoroutine(TypewriterBehaviour(Color.white, Color.white, Color.white,
-                ""));
+                "Could people not breathe in the era of Chaos?",
+                "Not that kind of breath, silly. I meant the source of our life force. The Breath, from which all life originates in our Universe."));
             break;
 
             case 21:
                 dialogueText.text = "";
-                dialogueText.color = Color.white;
+                dialogueText.color = Color.gray;
                 StartCoroutine(TypewriterBehaviour(Color.white, Color.white, Color.white,
-                ""));
+                "Are you not gonna tell them about the Heights, old man?"));
             break;
-            #endregion
-            #region Epilogue
+            
+
+            case 22:
+                dialogueText.text = "";
+                dialogueText.color = Color.green;
+                StartCoroutine(TypewriterBehaviour(Color.white, Color.white, Color.white,
+                "At the moment of humanity's triumph over the darkness, the Heights emerged."));
+            break;
+
+            case 23:
+                dialogueText.text = "";
+                dialogueText.color = Color.green;
+                StartCoroutine(TypewriterBehaviour(Color.white, Color.white, Color.white,
+                "Now, the tower serves as a reminder of human potential, and a memory of our dark past.",
+                "The Spirits would be proud of you, little one."));
+            break;
             #endregion
         }
     }
